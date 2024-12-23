@@ -29,6 +29,9 @@ var (
 		regexp.MustCompile(`^(?:https?://)?raw\.github(?:usercontent|)\.com/([^/]+)/([^/]+)/.+?/.+$`),
 		regexp.MustCompile(`^(?:https?://)?gist\.github(?:usercontent|)\.com/([^/]+)/.+?/.+`),
 		regexp.MustCompile(`^(?:https?://)?api\.github\.com/repos/([^/]+)/([^/]+)/.*`),
+		regexp.MustCompile(`^(?:https?://)?huggingface\.co/spaces/([^/]+)/([^/]+).*`),
+		regexp.MustCompile(`^(?:https?://)?huggingface\.co/spaces/([^/]+)/([^/]+(?:\s[^/]+)?)$`),
+		regexp.MustCompile(`^(?:https?://)?cdn-lfs\.hf\.co/repos/.+`),
 	}
 	httpClient *http.Client
 	config     *Config
